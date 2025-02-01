@@ -11,14 +11,52 @@
     <div id="wrapper">
 
         <!-- Website Header -->
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Website Header</title>
+            <style>
+                .box {
+                    background-color: white; /* White background for the box */
+                    padding: 6px 12px;
+                    border: 2px solid black;
+                    border-top: none;
+                    margin: 20px auto; /* Centers the box in the middle of the page */
+                }
+
+                .container {
+                    display: grid;
+                    grid-template-columns: 20% 80%;
+                    gap: 20px; /* Space between the columns */
+                }
+
+                .column {
+                    padding: 20px;
+                }
+
+                /* Style for the Google Scholar logo */
+                .google-scholar-logo img {
+                    width: 150px; /* Adjust the width of the logo */
+                    height: auto; /* Keep the aspect ratio of the logo */
+                }
+            </style>
+        </head>
         <body>
-            <div style="background-color:white">
-                <meta name="viewport" content="width=device-width, initial-scale=0.5">
-                <CENTER> <img src="WebsiteHeader.jpeg" width="10%" height="auto" border="0"> </CENTER>
+            <div class="box">
+                <div class="container">
+                    <div class="column">
+                        <CENTER> <img src="WebsiteHeader.jpeg" width="80%" height="auto" border="0"> </CENTER>
+                    </div>
+                    <div class="column">
+                        <h2>Ameya Rajendra Godbole, Phd.</h2>
+                        </h3>Sr. Quality Engineer, MathWorks, Inc.</h3>
+                    </div>
+                </div>
             </div>
+
         </body>
 
-        <!-- Tabs below the header -->>
+        <!-- Tabs below the header -->
         <head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <style>
