@@ -20,20 +20,19 @@
             <style>
                 .box {
                     background-color: white; /* White background for the box */
-                    padding: 6px 12px;
+                    padding: 6px 6px;
                     border: 2px solid black;
-                    border-top: none;
                     margin: 20px auto; /* Centers the box in the middle of the page */
                 }
 
                 .container {
                     display: grid;
                     grid-template-columns: 35% 65%;
-                    gap: 20px; /* Space between the columns */
+                    gap: 5px; /* Space between the columns */
                 }
 
                 .column {
-                    padding: 20px;
+                    padding: 5px;
                 }
 
                 /* Google Scholar Icon */
@@ -59,25 +58,6 @@
                     align-items: center;
                     display: inline-block
                 }
-
-                .image-container img {
-                    width: 100%; /* Makes the image responsive */
-                    height: auto; /* Maintains the aspect ratio */
-                    max-width: 150px; /* Optional: set a max width for the image */
-                }
-
-                /* Responsive Image Scaling: Larger image for larger screens */
-                @media (min-width: 768px) {
-                    .image-container img {
-                        max-width: 200px; /* Image size for medium devices like tablets */
-                    }
-                }
-
-                @media (min-width: 1024px) {
-                    .image-container img {
-                        max-width: 250px; /* Image size for larger screens like desktops */
-                    }
-                }
             </style>
 
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
@@ -87,9 +67,7 @@
             <div class="box">
                 <div class="container">
                     <div class="column">
-                        <div class="image-container">
-                            <CENTER> <img src="WebsiteHeader.jpeg" width="100%" height="auto" border="0"> </CENTER>
-                        </div>
+                        <CENTER> <img src="WebsiteHeader.jpeg" width="auto" height="100%" border="0"> </CENTER>
                     </div>
                     <div class="column">
                         <h3>Ameya Rajendra Godbole, Phd.</h3>
