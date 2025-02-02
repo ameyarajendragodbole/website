@@ -15,6 +15,8 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Website Header</title>
+            <!-- Include Font Awesome -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
             <style>
                 .box {
                     background-color: white; /* White background for the box */
@@ -34,12 +36,15 @@
                     padding: 20px;
                 }
 
-                /* Style for the Google Scholar logo */
-                .google-scholar-logo img {
-                    width: 150px; /* Adjust the width of the logo */
-                    height: auto; /* Keep the aspect ratio of the logo */
+                /* Default size for the Google Scholar icon */
+                .google-scholar-logo {
+                    font-size: 5vw; /* Use viewport width for responsive scaling */
+                    color: #4285F4; /* Optional: Google Scholar color (blue) */
+                    cursor: pointer; /* Change the cursor to a pointer */
                 }
             </style>
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
         </head>
         <body>
             <div class="box">
@@ -50,10 +55,20 @@
                     <div class="column">
                         <h2>Ameya Rajendra Godbole, Phd.</h2>
                         </h3>Sr. Quality Engineer, MathWorks, Inc.</h3>
+
+                        <!-- Google Scholar Icon and Link -->
+                        <p>
+                            <div class="google-scholar-logo">
+                                <a href="https://scholar.google.com" target="_blank">
+                                    <span class="fa-brands fa-google-scholar"></span>
+                                </a>
+                            </div>
+                            <span class="fa-brands fa-github"></span>
+                            <span class="fa-brands fa-linkedin"></span>
+                        </p>
                     </div>
                 </div>
             </div>
-
         </body>
 
         <!-- Tabs below the header -->
