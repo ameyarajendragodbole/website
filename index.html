@@ -1,355 +1,296 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Ameya Rajendra Godbole, Phd</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameya Rajendra Godbole, PhD</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #0064b1;
+            font-family: Arial;
+        }
+
+        h1 {
+            font-size: clamp(1rem, 1.5vw, 3rem);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .box {
+            background-color: white;
+            padding: 6px 12px;
+            border: 2px solid black;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        /* Google Scholar Icon */
+        .social-media-icons-google-scholar {
+            font-size: clamp(1rem, 2.5vw, 5rem); /* Use viewport width for responsive scaling */
+            cursor: pointer; /* Change the cursor to a pointer */
+            align-items: center;
+            display: inline-block
+        }
+
+        /* LinkedIn Icon */
+        .social-media-icons-linkedin {
+            font-size: clamp(1rem, 2.5vw, 5rem); /* Use viewport width for responsive scaling */
+            cursor: pointer; /* Change the cursor to a pointer */
+            align-items: center;
+            display: inline-block
+        }
+
+        /* GitHub Icon */
+        .social-media-icons-github {
+            font-size: clamp(1rem, 2.5vw, 5rem); /* Use viewport width for responsive scaling */
+            cursor: pointer; /* Change the cursor to a pointer */
+            align-items: center;
+            display: inline-block
+        }
+
+        h1 {
+            font-size: clamp(1rem, 1.5vw, 3rem);
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 2px solid #000;
+            background-color: #f58025;
+        }
+
+            /* Style the buttons inside the tab */
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                font-size: clamp(1rem, 1.5vw, 3rem);
+            }
+
+                .tab button:hover {
+                    background-color: #000;
+                }
+
+                .tab button.active {
+                    background-color: inherit;
+                    padding: 6px 12px;
+                }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 2px solid black;
+            border-top: none;
+            background-color: white;
+        }
+
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            font-size: clamp(1rem, 1.5vw, 3rem);
+            transition: 0.4s;
+        }
+
+            .active,
+            .accordion:hover {
+                background-color: #ccc;
+            }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        .accordion + img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
-<body style="background-color:#0064b1;">
-    <!-- Website Background -->
+<body>
     <div id="wrapper">
-
         <!-- Website Header -->
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Website Header</title>
+        <div class="box">
+            <img src="WebsiteHeader.jpeg" width="200px" border="0" alt="Ameya Rajendra Godbole">
+            <h1>Ameya Rajendra Godbole, PhD</h1>
+            <h2>Sr. Quality Engineer, MathWorks Inc.</h2>
 
-            <!-- Include Font Awesome -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-            <style>
-                .box {
-                    background-color: white; /* White background for the box */
-                    padding: 6px 12px;
-                    border: 2px solid black;
-                    margin: 20px auto; /* Centers the box in the middle of the page */
-                }
-
-                /* Google Scholar Icon */
-                .social-media-icons-google-scholar {
-                    font-size: clamp(1rem, 2.5vw, 5rem); /* Use viewport width for responsive scaling */
-                    cursor: pointer; /* Change the cursor to a pointer */
-                    align-items: center;
-                    display: inline-block
-                }
-
-                /* LinkedIn Icon */
-                .social-media-icons-linkedin {
-                    font-size: clamp(1rem, 2.5vw, 5rem); /* Use viewport width for responsive scaling */
-                    cursor: pointer; /* Change the cursor to a pointer */
-                    align-items: center;
-                    display: inline-block
-                }
-
-                /* GitHub Icon */
-                .social-media-icons-github {
-                    font-size: clamp(1rem, 2.5vw, 5rem); /* Use viewport width for responsive scaling */
-                    cursor: pointer; /* Change the cursor to a pointer */
-                    align-items: center;
-                    display: inline-block
-                }
-                h1 {
-                    font-size: clamp(1rem, 1.5vw, 3rem);
-                }
-
-                img {
-                    max-width: 100%;
-                    height: auto;
-                }
-            </style>
-
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        </head>
-
-        <body>
-            <div class="box">
-                <CENTER>
-                    <p>
-                        <img src="WebsiteHeader.jpeg" width="200px" border="0">
-                        <h1>
-                            <p>
-                                Ameya Rajendra Godbole, Phd
-                            </p>
-                        </h1>
-
-                        <h1>
-                            <p>
-                                Sr. Quality Engineer, MathWorks Inc.
-                            </p>
-                        </h1>
-                    </p>
-                    <div class="social-media-icons-google-scholar">
-                        <a href="https://scholar.google.com/citations?hl=en&user=G_naTksAAAAJ&view_op=list_works&gmla=AGd7smHV4iNIyzGMT5S36vj-Bz8uZLYq0h-eNmaKpu3xR-fgdC0StebiwaH9ZzbHkXun57pWDY6ghYNlXaZpf-ZL" target="_blank">
-                            <span class="fa-brands fa-google-scholar"></span>
-                        </a>
-                    </div>
-
-                    <div class="social-media-icons-linkedin">
-                        <a href="https://www.linkedin.com/in/ameya-rajendra-godbole" target="_blank">
-                            <span class="fa-brands fa-linkedin"></span>
-                        </a>
-                    </div>
-
-                    <div class="social-media-icons-github">
-                        <a href="https://github.com/ameyarajendragodbole" target="_blank">
-                            <span class="fa-brands fa-github"></span>
-                        </a>
-                    </div>
-                </CENTER>
+            <div class="social-media-icons-google-scholar">
+                <a href="https://scholar.google.com/citations?hl=en&user=G_naTksAAAAJ&view_op=list_works&gmla=AGd7smHV4iNIyzGMT5S36vj-Bz8uZLYq0h-eNmaKpu3xR-fgdC0StebiwaH9ZzbHkXun57pWDY6ghYNlXaZpf-ZL" target="_blank">
+                    <span class="fa-brands fa-google-scholar"></span>
+                </a>
             </div>
-        </body>
+
+            <div class="social-media-icons-linkedin">
+                <a href="https://www.linkedin.com/in/ameya-rajendra-godbole" target="_blank">
+                    <span class="fa-brands fa-linkedin"></span>
+                </a>
+            </div>
+
+            <div class="social-media-icons-github">
+                <a href="https://github.com/ameyarajendragodbole" target="_blank">
+                    <span class="fa-brands fa-github"></span>
+                </a>
+            </div>
+        </div>
 
         <!-- Tabs below the Website Header -->
-        <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <style>
-                body {
-                    font-family: Arial;
-                }
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+            <button class="tablinks" onclick="openTab(event, 'Research')">Research</button>
+            <button class="tablinks" onclick="openTab(event, 'Publications')">Publications</button>
+            <button class="tablinks" onclick="openTab(event, 'Gallery')">Gallery</button>
+            <button class="tablinks" onclick="openTab(event, 'Contact Me')">Contact Me</button>
+        </div>
 
-                /* Style the tab */
-                .tab {
-                    overflow: hidden;
-                    border: 2px solid #000000;
-                    background-color: #f58025;
-                }
+        <!-- Tab Content -->
+        <div id="Home" class="tabcontent" style="display:block;">
+            <h1>Biography</h1>
+            <p>Ameya Rajendra Godbole is a Mechanical Engineer and researcher specializing in robotics, physical modeling, and control systems. Currently, he is working as a Senior Quality Engineer with the Physical Modeling group at <a href="https://www.mathworks.com/">MathWorks Inc.</a>, where he focuses on <a href="https://www.mathworks.com/products/simscape-multibody.html">Simscape Multibody</a>, a leading simulation tool for modeling and analyzing 3D mechanical systems such as robotics, automotive suspensions, and aerospace mechanisms. His work ensures the accuracy, reliability, and performance of physics-based simulations, helping engineers design and validate complex mechanical systems with confidence.</p>
+            <p>Ameya holds a PhD and M.S in Mechanical Engineering from The University of Texas at Arlington, where his research explored mathematical modeling and nonlinear control of UAVs with cable suspended payloads, UAS reachability analysis, and trajectory design for autonomous systems. He worked as a Research Student at the Aerospace Systems Laboratory (ASL), University of Texas at Arlington under the guidance of <a href="http://wweb.uta.edu/faculty/subbarao/">Dr. Kamesh Subbarao</a>. Ameya's dissertation research was funded by National Science Foundation under the project <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1724248&HistoricalAwards=false"> "S&AS:FND: Safe Task-Aware Autonomous Resilient Systems (STAARS)" and award number 1724248</a>. He is also certified in <a href="https://credentials.professional.mit.edu/e30b6735-8e51-42ec-bc68-f74da91337a0#acc.RuaVmCdG">Applied Data Science: Leveraging AI for Effective Decision-Making</a> from <a href="https://professional.mit.edu/course-catalog/applied-data-science-program-leveraging-ai-effective-decision-making?utm_source=accredible&utm_medium=web&utm_campaign=sp-adsp-2023&utm_content=registernow">MIT Professional Education</a>.</p>
+            <p>Previously he worked as a Physical Modeling Quality Engineering Intern at the MathWorks Inc. from January 2017 to August 2017.</p>
+            <p><b>Interests:</b> Unmanned Vehicle Systems, Robotics, Mathematical Modeling and Simulation of Dynamic Systems, Control System Design, State and Parameter Estimation, System Identification, AI.</p>
 
-                    /* Style the buttons inside the tab */
-                    .tab button {
-                        background-color: inherit;
-                        float: left;
-                        border: none;
-                        outline: none;
-                        cursor: pointer;
-                        padding: 14px 16px;
-                        transition: 0.3s;
-                        font-size: clamp(1rem, 1.5vw, 3rem);
-                    }
+            <h1>Education</h1>
+            <ul>
+                <li>2015-2019, PhD, Mechanical Engineering, <a href="https://www.uta.edu/uta/">University of Texas at Arlington</a>, Arlington, Texas, USA</li>
+                <li>2013-2015, M.S, Mechanical Engineering, <a href="https://www.uta.edu/uta/">University of Texas at Arlington</a>, Arlington, Texas, USA</li>
+                <li>2009-2013, B.E , Mechanical Engineering, <a href="https://kjsce.somaiya.edu/kjsce?/kjsce">K.J.Somaiya College of Engineering</a>, Mumbai University, Mumbai, India</li>
+            </ul>
 
-                        /* Change background color of buttons on hover */
-                        .tab button:hover {
-                            background-color: #000000;
-                        }
+            <h1>Professional Appointments</h1>
+            <ul>
+                <li>Sept 2019 - Present, Senior Quality Engineer, Physical Modeling, <a href="https://www.mathworks.com/">The MathWorks Inc.</a>, Natick, MA, USA</li>
+                <li>Jan 2019 - May 2019, Instructor for ME 5379, Unmanned Vehicle System Development, <a href="https://www.uta.edu/mae/">Mechanical and Aerospace Engineering Department, The University of Texas at Arlington</a>, Arlington, TX, USA</li>
+                <li>Jan 2017 - Aug 2017, Physical Modelling Quality Engineering Intern, <a href="https://www.mathworks.com/">The MathWorks Inc.</a>, Natick, MA, USA</li>
+            </ul>
+        </div>
 
-                        /* Create an active/current tablink class */
-                        .tab button.active {
-                            background-color: inherit;
-                            padding: 6px 12px;
-                        }
+        <!-- Additional Tabs for Research, Publications, etc. will go here -->
+        <!-- Tab: Research -->
+        <div id="Research" class="tabcontent">
+            <h1>Research</h1>
+            <div style="margin-top:10px;">
+                <button class="accordion">Nonlinear Control of UAVs with Cable Suspended Payloads</button>
+                <div class="panel">
+                    <p>The advancements in sensor technology and increase in onboard computation power has seen a large increase in the use of UAS platforms. This has provided an opportunity to deploy aerial vehicles for surveillance, search and rescue operations in disaster situations like floods and earthquakes. Given the advantages like hovering at a certain location, agile mobility, and vertical take-off and landing capability, the multirotor vehicles have proven to be useful for payload delivery when the drop-off location of the payload is critical.</p>
+                    <p>The payload transportation using multicopter unmanned aerial vehicles can be useful in a variety of applications like construction, and repair of structures at high altitudes or operating in difficult-to-access, remote, or hazardous locations for sample delivery or retrieval problems. Additionally, a multi-agent system consisting of multiple vehicles can be deployed for transporting heavier payloads.</p>
+                    <p>The payload transportation problem using multicopters can be addressed using robotic manipulators attached to the aerial vehicle or through the use of cable to carry the payload. Although the use of multicopters with manipulators provides the advantage of the payload being rigidly connected to the body of the vehicle, it also increases the overall inertia of the system, thus limiting the maximum weight of the payload it can lift. Thus, the use of a cable suspended payload is an alternative solution proposed to solve this problem.</p>
+                    <p>The multicopter with cable suspended payload is a coupled underactuated dynamical system. Thus, it is necessary to design a controller to attenuate the oscillations of the payload while trying to maintain the desired trajectory (position, velocity, and acceleration) of the multicopter for the overall safe operation. Additionally, the control framework should be capable of rejecting external disturbances like drag force due to the wind induced on the system.</p>
+                    <p>The solution to this control problem is presented in a couple of ways. The first solution to this problem is presented through the design of an extended state observer-based active disturbance rejection controller. The disturbance induced in the system due to the motion of the payload is estimated using the extended state observer with the position of the quadcopter as the input to the observer. Using these disturbance estimates, an active disturbance rejection controller is designed to achieve favorable performance of the quadcopter.</p>
+                    <p>The second solution to the control problem is presented using an energy-based approach called passivity-based control that asymptotically stabilizes the swing of the payload during transportation. The implementation of the passivity-based controller requires the knowledge of higher time derivatives of the payload oscillations. Assuming only the swing angles of the payload with respect to an Unmanned Aerial Vehicle (UAV) are measured, these states (primarily the angular velocity) are estimated using a continuous-discrete Kalman filter.</p>
+                    <p>The framework will be extended for the multi-agent system of quadcopters carrying a cable suspended payload.</p>
+                </div>
 
-                /* Style the tab content */
-                .tabcontent {
-                    display: none;
-                    padding: 6px 12px;
-                    border: 2px solid black;
-                    border-top: none;
-                    background-color: white;
-                }
-            </style>
-        </head>
-
-        <body>
-            <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'Home')">Home</button>
-                <button class="tablinks" onclick="openTab(event, 'Research')">Research</button>
-                <button class="tablinks" onclick="openTab(event, 'Publications')">Publications</button>
-                <button class="tablinks" onclick="openTab(event, 'Gallery')">Gallery</button>
-                <button class="tablinks" onclick="openTab(event, 'Contact Me')">Contact Me</button>
+                <div style="background-color:white; text-align:center;">
+                    <img src="figs/ResearchProposalOutline.png" width="100%" height="auto" border="0">
+                </div>
             </div>
 
-            <!-- Tab: Home -->
-            <div id="Home" class="tabcontent" style=display:block>
-
-                <body>
-                    <h1>Biography</h1>
-                    <p>
-                        Ameya Rajendra Godbole is a Mechanical Engineer and researcher specializing in robotics, physical modeling, and control systems. Currently, he is working as a Senior Quality Engineer with the Physical Modeling group at <a href="https://www.mathworks.com/">MathWorks Inc.</a>,  where he focuses on <a href="https://www.mathworks.com/products/simscape-multibody.html">Simscape Multibody</a>, a leading simulation tool for modeling and analyzing 3D mechanical systems such as robotics, automotive suspensions, and aerospace mechanisms. His work ensures the accuracy, reliability, and performance of physics-based simulations, helping engineers design and validate complex mechanical systems with confidence.
-                    </p>
-                    <p>
-                        Ameya holds a Ph.D. and M.S. in Mechanical Engineering from The University of Texas at Arlington, where his research explored mathematical modeling and nonlinear control of UAVs with cable suspended payloads, UAS reachability analysis, and trajectory design for autonomous systems. He worked as a Research Student at the Aerospace Systems Laboratory (ASL), University of Texas at Arlington under the guidance of <a href="http://wweb.uta.edu/faculty/subbarao/">Dr. Kamesh Subbarao</a>. Ameya's dissertation research was funded by National Science Foundation under the project <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1724248&HistoricalAwards=false"> "S&AS:FND: Safe Task-Aware Autonomous Resilient Systems (STAARS)" and award number 1724248</a>. He is also certified in <a href="https://credentials.professional.mit.edu/e30b6735-8e51-42ec-bc68-f74da91337a0#acc.RuaVmCdG">Applied Data Science: Leveraging AI for Effective Decision-Making</a> from <a href="https://professional.mit.edu/course-catalog/applied-data-science-program-leveraging-ai-effective-decision-making?utm_source=accredible&utm_medium=web&utm_campaign=sp-adsp-2023&utm_content=registernow">MIT Professional Education</a>.
-                    </p>
-                    <p>
-                        Previously he worked as a Physical Modeling Quality Engineering Intern at the MathWorks Inc. from January 2017 to August 2017.
-                    </p>
-                    <p>
-                        <b>Interests:</b> Unmanned Vehicle Systems, Robotics, Mathematical Modeling and Simulation of Dynamic Systems, Control System Design, State and Parameter Estimation, System Identification, AI.
-                    </p>
-                </body>
-
-                <body>
-                    <h1> Education </h1>
-                    <ul style="margin-top:10px;">
-                        <li>2015-2019, PhD, Mechanical Engineering, <a href="https://www.uta.edu/uta/">University of Texas at Arlington</a>, Arlington, Texas, USA</li>
-                        <br>
-                        <li>2013-2015, M.S, Mechanical Engineering, <a href="https://www.uta.edu/uta/">University of Texas at Arlington</a>, Arlington, Texas, USA</li>
-                        <br>
-                        <li>2009-2013, B.E , Mechanical Engineering, <a href="https://kjsce.somaiya.edu/kjsce?/kjsce">K.J.Somaiya College of Engineering</a>, Mumbai University, Mumbai, India</li>
-                    </ul>
-                </body>
-
-                <body>
-                    <h1>Professional Appointments </h1>
-                    <ul style="margin-top:10px;">
-                        <li>Sept 2019 - Present, Senior Quality Engineer, Physical Modeling, <a href="https://www.mathworks.com/"> The MathWorks Inc.</a>, Natick, MA, USA </li>
-                        <br>
-                        <li>Jan 2019 - May 2019, Instructor for ME 5379, Unmanned Vehicle System Development, <a href="https://www.uta.edu/mae/"> Mechanical and Aerospace Engineering Department, The University of Texas at Arlington</a>, Arlington, TX, USA </li>
-                        <br>
-                        <li>Jan 2017 - Aug 2017, Physical Modelling Quality Engineering Intern, <a href="https://www.mathworks.com/"> The MathWorks Inc.</a>, Natick, MA, USA </li>
-                        <br>
-                    </ul>
-                </body>
-            </div>
-
-            <!-- Tab: Research -->
-            <div id="Research" class="tabcontent">
-                <h1>Research</h1>
-                <ul style="margin-top:10px;">
-                </ul>
-                <style>
-                    .accordion {
-                        background-color: #eee;
-                        color: #444;
-                        cursor: pointer;
-                        padding: 18px;
-                        width: 100%;
-                        border: none;
-                        text-align: left;
-                        outline: none;
-                        font-size: clamp(1rem, 1.5vw, 3rem);
-                        transition: 0.4s;
-                    }
-
-                        .active,
-                        .accordion:hover {
-                            background-color: #ccc;
-                        }
-
-                    .panel {
-                        padding: 0 18px;
-                        display: none;
-                        background-color: white;
-                        overflow: hidden;
-                    }
-                </style>
-                </head>
-
-                <body>
-
-                    <button class="accordion">Nonlinear Control of UAVs with with Cable Suspended Payloads</button>
-                    <div class="panel">
-                        <p>The advancements in sensor technology and increase in onboard computation power has seen a large increase in the use of UAS platforms. This has provided an opportunity to deploy aerial vehicles for surveillance, search and rescue operations in disaster situations like floods and earthquakes. Given the advantages like hovering at a certain location, agile mobility, and vertical take-off and landing capability, the multirotor vehicles have proven to be useful for payload delivery when the drop-off location of the payload is critical.</p>
-                        <p>The payload transportation using multicopter unmanned aerial vehicles can be useful in variety of applications like construction, and repair of structures at high altitudes or operating in difficult-to-access, remote, or hazardous locations for sample delivery or retrieval problem. Additionally, a multi-agent system consisting of multiple vehicles can be deployed for transporting heavier payloads.</p>
-                        <p>The payload transportation problem using multicopters can be addressed using robotic manipulators attached to the aerial vehicle or through the use of cable to carry the payload. Although the use of multicopters with manipulators provide the advantage of payload being rigidly connected to the body of the vehicle, it also increases the overall inertia of the system thus limiting the maximum weight of the payload it can lift. Thus, the use of cable suspended payload is an alternative solution proposed to solve this problem.</p>
-                        <p>The multicopter with cable suspended payload is a coupled underactuated dynamical system. Thus, it is necessary to design a controller to attenuate the oscillations of the payload while trying to maintain the desired trajectory (position, velocity and acceleration) of the multicopter for the overall safe operation. Additionally, the control framework should be capable of rejecting external disturbances like drag force due to the wind induced on the system.</p>
-                        <p>The solution to this control problem is presented in a couple of ways. The first solution to this problem is presented through the design of an extended state observer based active disturbance rejection controller. The disturbance induced in the system due to the motion of the payload is estimated using the extended state observer with position of the quadcopter as the input to the observer. Using these disturbance estimates, an active disturbance rejection controller to achieve a favorable performance of the quadcopter is designed.</p>
-                        <p>The second solution to the control problem is presented using an energy based approach called passivity based controller that asymptotically stabilizes the swing of the payload during transportation. The implementation of the passivity based controller requires the knowledge of higher time derivatives of the payload oscillations. Assuming only the swing angles of the payload with respect to an Unamnned Aerial Vehicle (UAV) are measured, these states (primarily the angular velocity) are estimated using a continuous-discrete Kalman filter.</p>
-                        <p>The framework will be extended for the multi-agent system of quadcopters carrying a cable suspended payload.</p>
-
-                        <body>
-                            <div style="background-color:white">
-                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                <CENTER> <img src="figs/ResearchProposalOutline.png" width="100%" height="auto" border="0"> </CENTER>
-                            </div>
-                        </body>
-                    </div>
-
-
-
-                    <script>
-                        var acc = document.getElementsByClassName("accordion");
-                        var i;
-
-                        for (i = 0; i < acc.length; i++) {
-                            acc[i].addEventListener("click", function () {
-                                this.classList.toggle("active");
-                                var panel = this.nextElementSibling;
-                                if (panel.style.display === "block") {
-                                    panel.style.display = "none";
-                                } else {
-                                    panel.style.display = "block";
-                                }
-                            });
-                        }
-                    </script>
-            </div>
-
-            <!-- Tab: Publications -->
-            <div id="Publications" class="tabcontent">
-                <h1>Publications</h1>
-                <ul style="margin-top:10px;">
-                    <ol>
-
-                        <li>
-                            A. R. Godbole and K. Subbarao, "Nonlinear Control of Unmanned Aerial Vehicles with Cable Suspended Payloads," in Journal of Aerospace Science, and Technology (Elsevier),vol.93, p.105299, 2019, doi: <a href="https://doi.org/10.1016/j.ast.2019.07.032"> https://doi.org/10.1016/j.ast.2019.07.032. </a>
-                        </li>
-
-                        <br>
-
-                        <li>
-                            A. Godbole, K. Subbarao, A. Dogan, and B. Huff, "Semi-analytical range and endurance computation of battery-powered multi-copter unmanned aerial systems under steady wind conditions," in Proceedings of the Institution of Mechanical Engineers, Part G: Journal of Aerospace Engineering, April, 2019. [Online]. Available: <a href="https://doi.org/10.1177/0954410019842714"> https://doi.org/10.1177/0954410019842714</a>
-                        </li>
-
-                        <br>
-
-                        <li>
-                            A. R. Godbole, K. Subbarao, A. Dogan and B. Huff, <a href="https://ieeexplore.ieee.org/abstract/document/8453388"> "Range and Endurance Characterization of a Quadcopter subject to Steady Wind"</a>, 2018 International Conference on Unmanned Aircraft Systems (ICUAS), Dallas, TX, 2018, pp. 1279-1287.
-                            doi: 10.1109/ICUAS.2018.8453388
-                        </li>
-
-                        <br>
-
-                        <li>
-                            A. R. Godbole and K. Subbarao, <a href="https://ieeexplore.ieee.org/document/8444279"> "Mathematical Modeling and Control of an Unmanned Aerial System with a Cable Suspended Payload"</a>, 2018 IEEE 14th International Conference on Control and Automation (ICCA), Anchorage, AK, 2018, pp. 570-575.
-                            doi: 10.1109/ICCA.2018.8444279
-                        </li>
-
-                        <br>
-
-                        <li>Godbole A., Murali V.N.V., Quillen P., Subbarao K., <a href="http://www.univelt.com/book=6143"> "Optimal Trajectory Design and Control of a Planetary Exploration Rover"</a>, 27th AAS/AIAA Space Flight Mechanics Meeting, February 2017, San Antonio, TX, USA</li>
-
-                        <br>
-
-                        <li>
-                            Godbole, A. R. (2015).<a href="https://search.proquest.com/docview/1699700882?pq-origsite=gscholar"> "Dynamics and Control of the Smart Maintenance and Inspection Robotic Free-Flyer (SMIRFF)"</a>. The University of Texas at Arlington.
-                        </li>
-
-                        <br>
-
-                        <li>G. Atmeh, L.S. Henderson, P. Nuthi, A. Rege, P. Ru, A. Godbole, P. Quillen, K. Subbarao, <a href="http://rascal.nianet.org/wp-content/uploads/2015/07/RASC-AL-2014-UTA-TechPaper.pdf">" SMIRFF: Smart Maintenance, Inspection, and Repair Free-Flyer"</a>, NASA Revolutionary Aerospace Systems Concepts - Academic Linkage 2014. (Won <a href="http://rascal.nianet.org/rascal-archives/2014-winning-teams/">1st place in the Graduate Division</a> for Tele-Operated Flying Robot.) </li>
-                    </ol>
-                </ul>
-            </div>
-
-            <!-- Tab: Gallery -->
-            <div id="Gallery" class="tabcontent">
-                <h1></h1>
-            </div>
-
-            <!-- Tab: Contact Me -->
-            <div id="Contact Me" class="tabcontent">
-                <p>Email : ameyarajendragodbole@gmail.com</p>
-                <p> <a href="https://www.linkedin.com/in/ameya-godbole-07808558?trk=people-guest_profile-result-card_result-card_full-click">Connect with me on Linkedin</a></p>
-                <p> <a href="GodboleAmeyaRajendra_Resume.pdf">My Resume</a></p>
-                <p> <a href="https://www.youtube.com/channel/UCeBagxyJDI614zZ4-ZxZ2fw">My YouTube Channel</a></p>
-            </div>
-
-            <!-- Script for function openTab -->
             <script>
-                function openTab(evt, tabName) {
-                    var i, tabcontent, tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i].className.replace(" active", "");
-                    }
-                    document.getElementById(tabName).style.display = "block";
-                    evt.currentTarget.className += " active";
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function () {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.display === "block") {
+                            panel.style.display = "none";
+                        } else {
+                            panel.style.display = "block";
+                        }
+                    });
                 }
             </script>
-        </body>
+        </div>
+
+        <!-- Tab: Publications -->
+        <div id="Publications" class="tabcontent">
+            <h1>Publications</h1>
+            <h2> Journal</h2>
+            <ul style="margin-top:10px; list-style-position: inside;">
+                <li style="margin-bottom: 10px;">
+                    A. R. Godbole and K. Subbarao, "Nonlinear Control of Unmanned Aerial Vehicles with Cable Suspended Payloads," in Journal of Aerospace Science, and Technology (Elsevier), vol.93, p.105299, 2019, doi: <a href="https://doi.org/10.1016/j.ast.2019.07.032">https://doi.org/10.1016/j.ast.2019.07.032</a>.
+                </li>
+
+                <li style="margin-bottom: 10px;">
+                    A. Godbole, K. Subbarao, A. Dogan, and B. Huff, "Semi-analytical range and endurance computation of battery-powered multi-copter unmanned aerial systems under steady wind conditions," in Proceedings of the Institution of Mechanical Engineers, Part G: Journal of Aerospace Engineering, April, 2019. [Online]. Available: <a href="https://doi.org/10.1177/0954410019842714">https://doi.org/10.1177/0954410019842714</a>.
+                </li>
+            </ul>
+            <h2>Conference</h2>
+            <ul style="margin-top:10px; list-style-position: inside;">
+                <li style="margin-bottom: 10px;">
+                    A. R. Godbole, K. Subbarao, A. Dogan and B. Huff, <a href="https://ieeexplore.ieee.org/abstract/document/8453388">"Range and Endurance Characterization of a Quadcopter subject to Steady Wind"</a>, 2018 International Conference on Unmanned Aircraft Systems (ICUAS), Dallas, TX, 2018, pp. 1279-1287. doi: 10.1109/ICUAS.2018.8453388.
+                </li>
+
+                <li style="margin-bottom: 10px;">
+                    A. R. Godbole and K. Subbarao, <a href="https://ieeexplore.ieee.org/document/8444279">"Mathematical Modeling and Control of an Unmanned Aerial System with a Cable Suspended Payload"</a>, 2018 IEEE 14th International Conference on Control and Automation (ICCA), Anchorage, AK, 2018, pp. 570-575. doi: 10.1109/ICCA.2018.8444279.
+                </li>
+
+                <li style="margin-bottom: 10px;">
+                    Godbole A., Murali V.N.V., Quillen P., Subbarao K., <a href="http://www.univelt.com/book=6143">"Optimal Trajectory Design and Control of a Planetary Exploration Rover"</a>, 27th AAS/AIAA Space Flight Mechanics Meeting, February 2017, San Antonio, TX, USA.
+                </li>
+
+                <li style="margin-bottom: 10px;">
+                    Godbole, A. R. (2015). <a href="https://search.proquest.com/docview/1699700882?pq-origsite=gscholar">"Dynamics and Control of the Smart Maintenance and Inspection Robotic Free-Flyer (SMIRFF)"</a>. The University of Texas at Arlington.
+                </li>
+
+                <li>
+                    G. Atmeh, L.S. Henderson, P. Nuthi, A. Rege, P. Ru, A. Godbole, P. Quillen, K. Subbarao, <a href="http://rascal.nianet.org/wp-content/uploads/2015/07/RASC-AL-2014-UTA-TechPaper.pdf">"SMIRFF: Smart Maintenance, Inspection, and Repair Free-Flyer"</a>, NASA Revolutionary Aerospace Systems Concepts - Academic Linkage 2014. (Won <a href="http://rascal.nianet.org/rascal-archives/2014-winning-teams/">1st place in the Graduate Division</a> for Tele-Operated Flying Robot.)
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tab: Contact Me -->
+        <div id="Contact Me" class="tabcontent">
+            <p>Email: <a href="mailto:ameyarajendragodbole@gmail.com">ameyarajendragodbole@gmail.com</a></p>
+            <p><a href="https://www.linkedin.com/in/ameya-godbole-07808558?trk=people-guest_profile-result-card_result-card_full-click">Connect with me on Linkedin</a></p>
+            <p><a href="GodboleAmeyaRajendra_Resume.pdf">My Resume</a></p>
+            <p><a href="https://www.researchgate.net/profile/Ameya_Godbole">ResearchGate Profile</a></p>
+        </div>
+    </div>
+    <script>
+        function openTab(evt, tabName) {
+            let i, tabcontent, tablinks;
+
+            // Hide all tab content
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Remove the active class from all tab buttons
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the selected tab content and add the active class to the clicked button
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+
 </html>
