@@ -163,10 +163,10 @@
             <button class="tablinks" onclick="openTab(event, 'Research')">Research</button>
             <button class="tablinks" onclick="openTab(event, 'Publications')">Publications</button>
             <button class="tablinks" onclick="openTab(event, 'Gallery')">Gallery</button>
-        <button class="tablinks" onclick="openTab(event, 'Contact Me')">Contact Me</button>
-    </div>
+            <button class="tablinks" onclick="openTab(event, 'Contact Me')">Contact Me</button>
+        </div>
 
-    <!-- Tab Content -->
+        <!-- Tab Content -->
         <div id="Home" class="tabcontent" style="display:block;">
             <h1>Biography</h1>
             <p>Ameya Rajendra Godbole is a Mechanical Engineer and researcher specializing in robotics, physical modeling, and control systems. Currently, he is working as a Senior Quality Engineer with the Physical Modeling group at <a href="https://www.mathworks.com/">MathWorks Inc.</a>, where he focuses on <a href="https://www.mathworks.com/products/simscape-multibody.html">Simscape Multibody</a>, a leading simulation tool for modeling and analyzing 3D mechanical systems such as robotics, automotive suspensions, and aerospace mechanisms. His work ensures the accuracy, reliability, and performance of physics-based simulations, helping engineers design and validate complex mechanical systems with confidence.</p>
@@ -202,151 +202,163 @@
             </style>
         </div>
 
-            <!-- Tab: Research -->
-            <div id="Research" class="tabcontent">
-                <h1>Research</h1>
-                <div style="margin-top:10px;">
-                    <button class="accordion">Nonlinear Control of UAVs with Cable Suspended Payloads</button>
-                    <div class="panel">
-                        <p>This research focuses on the mathematical modeling and control of an unmanned aerial vehicle (UAV) with a cable-suspended payload. A comprehensive mathematical model is derived for a quadcopter with a cable-suspended payload using the Newton-Euler method and the Euler-Lagrange formulation. These methods assume that the cable is massless and always taut and cannot be used to simulate the cases when the cable is flexible. Hence, an alternative approach to model the flexibility of the cable is presented using Lagrangian mechanics by approximating the cable to be a chain of serially connected links. The motion of the payload induces disturbances on the aerial platform and must be mitigated for stable operation.</p>
-                        <p>The solution to this control problem is presented through the implementation of a passivity-based controller and an extended state observer-based active disturbance rejection controller. The implementation of the passivity-based controller requires the knowledge of time derivatives of the payload oscillations. Assuming only the swing angles of the payload with respect to the unmanned aerial vehicle are measured, these states (primarily the angular velocity) are estimated using a continuous-discrete Kalman Filter. Alternately, since the payload cable swing angles are difficult to measure or require additional on-board sensors, an active disturbance rejection controller is designed and implemented wherein the disturbances induced in the system due to the motion of the payload are estimated using the extended state observer.</p>
-                        <p>A comparison between the passivity-based controller and the extended state observer-based active disturbance rejection controller is performed using a high-fidelity numerical simulation. The simulation results are verified experimentally using a quadcopter platform in the Aerospace Systems Laboratory at The University of Texas at Arlington. Furthermore, the mathematical modeling of a multi-agent system consisting of multiple quadcopters connected to a rigid-body payload via cables is presented. A distributed extended state observer-based active disturbance rejection controller is implemented on this system to achieve the cooperative control task of safely transporting the payload while attenuating the swing of the payload.</p>
+        <!-- Tab: Research -->
+        <div id="Research" class="tabcontent">
+            <h1>Research</h1>
+            <div style="margin-top:10px;">
+                <button class="accordion">Nonlinear Control of UAVs with Cable Suspended Payloads</button>
+                <div class="panel">
+                    <p>This research focuses on the mathematical modeling and control of an unmanned aerial vehicle (UAV) with a cable-suspended payload. A comprehensive mathematical model is derived for a quadcopter with a cable-suspended payload using the Newton-Euler method and the Euler-Lagrange formulation. These methods assume that the cable is massless and always taut and cannot be used to simulate the cases when the cable is flexible. Hence, an alternative approach to model the flexibility of the cable is presented using Lagrangian mechanics by approximating the cable to be a chain of serially connected links. The motion of the payload induces disturbances on the aerial platform and must be mitigated for stable operation.</p>
+                    <p>The solution to this control problem is presented through the implementation of a passivity-based controller and an extended state observer-based active disturbance rejection controller. The implementation of the passivity-based controller requires the knowledge of time derivatives of the payload oscillations. Assuming only the swing angles of the payload with respect to the unmanned aerial vehicle are measured, these states (primarily the angular velocity) are estimated using a continuous-discrete Kalman Filter. Alternately, since the payload cable swing angles are difficult to measure or require additional on-board sensors, an active disturbance rejection controller is designed and implemented wherein the disturbances induced in the system due to the motion of the payload are estimated using the extended state observer.</p>
+                    <p>A comparison between the passivity-based controller and the extended state observer-based active disturbance rejection controller is performed using a high-fidelity numerical simulation. The simulation results are verified experimentally using a quadcopter platform in the Aerospace Systems Laboratory at The University of Texas at Arlington. Furthermore, the mathematical modeling of a multi-agent system consisting of multiple quadcopters connected to a rigid-body payload via cables is presented. A distributed extended state observer-based active disturbance rejection controller is implemented on this system to achieve the cooperative control task of safely transporting the payload while attenuating the swing of the payload.</p>
 
-                        <div class="video-container">
-                            <h3>ESO Based ADRC for UAVs with Cable Suspended Payloads</h3>
-                            <video class="responsive-video" controls>
-                                <source src="media\Research\Nonlinear Control of UAVs with with Cable Suspended Payloads\ESO_Based_ADRC_Case1.mp4" type="video/mp4">
-                            </video>
-                        </div>
-
-                        <style>
-                            .responsive-video {
-                                width: 75%; /* Makes the video 75% of the device width */
-                                height: auto; /* Maintains the aspect ratio */
-                                display: block; /* Makes it a block-level element */
-                                margin: 0 auto; /* Centers the video horizontally */
-                            }
-
-                            .video-container {
-                                text-align: center; /* Centers the title and video */
-                            }
-
-                            h3 {
-                                font-size: 1.5em; /* Adjusts the size of the title */
-                                margin-bottom: 10px; /* Adds space between the title and the video */
-                            }
-                        </style>
+                    <div class="video-container">
+                        <h3>ESO Based ADRC for UAVs with Cable Suspended Payloads</h3>
+                        <video class="responsive-video" controls>
+                            <source src="media\Research\Nonlinear Control of UAVs with with Cable Suspended Payloads\ESO_Based_ADRC_Case1.mp4" type="video/mp4">
+                        </video>
                     </div>
 
-                    <button class="accordion">Dynamics and Control of the Smart Maintenance and Inspection Robotic Free-Flyer (SMIRFF)</button>
-                    <div class="panel">
-                        <p>The aim of future space missions would be to explore near-Earth planets and asteroids. This would mean longer flight durations, requiring a space habitat. Longer flight durations would also necessitate frequent maintenance and repairs of the space habitat. This would involve the risk of exposing astronauts to harsh environments while conducting extra-vehicular activities. This risk can be minimized by using a tele-operated free-flying robot. Free-flying robots are a unique class of robots that do not have a rigid fixed base and float in space.</p>
-                        <p>A concept of Smart Maintenance Inspection and Robotic Free-flyer (SMIRFF) is presented in this research. SMIRFF is a compact free-flyer with two robotic arms. It uses cold-gas thrusters to position and orient itself in space. With an array of onboard sensors, cameras, and robotic arms, SMIRFF is capable of performing visual inspections along with minimal maintenance and repair works. SMIRFF weighs roughly around 10 kg. Since NASA has been exploring the possibilities of using 3D printing technology, custom-made versions of this robot can be additively manufactured for task-specific purposes.</p>
-                        <p>The aim of the research is to derive the kinematics of SMIRFF using modified Denavit-Hartenberg parameters. Using these kinematic relations, the non-linear dynamical model is constructed using an Iterative Newton-Euler method. A simulation showing the effect of simple manipulator arm motion on the base is demonstrated. The next step involves showing the usefulness of the simulation environment, SimMechanics (MATLAB/SIMULINK), in simulating such complex multi-body systems. Finally, a quaternion-based feedback controller is used to control the attitude of the floating base by counteracting the reaction moments generated due to the motion of the manipulator arms.</p>
-                    </div>
+                    <style>
+                        .responsive-video {
+                            width: 75%; /* Makes the video 75% of the device width */
+                            height: auto; /* Maintains the aspect ratio */
+                            display: block; /* Makes it a block-level element */
+                            margin: 0 auto; /* Centers the video horizontally */
+                        }
+
+                        .video-container {
+                            text-align: center; /* Centers the title and video */
+                        }
+
+                        h3 {
+                            font-size: 1.5em; /* Adjusts the size of the title */
+                            margin-bottom: 10px; /* Adds space between the title and the video */
+                        }
+                    </style>
                 </div>
 
-                <script>
-                    var acc = document.getElementsByClassName("accordion");
-                    var i;
+                <button class="accordion">Dynamics and Control of the Smart Maintenance and Inspection Robotic Free-Flyer (SMIRFF)</button>
+                <div class="panel">
+                    <p>The aim of future space missions would be to explore near-Earth planets and asteroids. This would mean longer flight durations, requiring a space habitat. Longer flight durations would also necessitate frequent maintenance and repairs of the space habitat. This would involve the risk of exposing astronauts to harsh environments while conducting extra-vehicular activities. This risk can be minimized by using a tele-operated free-flying robot. Free-flying robots are a unique class of robots that do not have a rigid fixed base and float in space.</p>
+                    <p>A concept of Smart Maintenance Inspection and Robotic Free-flyer (SMIRFF) is presented in this research. SMIRFF is a compact free-flyer with two robotic arms. It uses cold-gas thrusters to position and orient itself in space. With an array of onboard sensors, cameras, and robotic arms, SMIRFF is capable of performing visual inspections along with minimal maintenance and repair works. SMIRFF weighs roughly around 10 kg. Since NASA has been exploring the possibilities of using 3D printing technology, custom-made versions of this robot can be additively manufactured for task-specific purposes.</p>
+                    <p>The aim of the research is to derive the kinematics of SMIRFF using modified Denavit-Hartenberg parameters. Using these kinematic relations, the non-linear dynamical model is constructed using an Iterative Newton-Euler method. A simulation showing the effect of simple manipulator arm motion on the base is demonstrated. The next step involves showing the usefulness of the simulation environment, SimMechanics (MATLAB/SIMULINK), in simulating such complex multi-body systems. Finally, a quaternion-based feedback controller is used to control the attitude of the floating base by counteracting the reaction moments generated due to the motion of the manipulator arms.</p>
+                </div>
 
-                    for (i = 0; i < acc.length; i++) {
-                        acc[i].addEventListener("click", function () {
-                            this.classList.toggle("active");
-                            var panel = this.nextElementSibling;
-                            if (panel.style.display === "block") {
-                                panel.style.display = "none";
-                            } else {
-                                panel.style.display = "block";
-                            }
-                        });
-                    }
-                </script>
+                <button class="accordion">Optimal Trajectory Design and Control of a Planetary Exploration Rover</button>
+                <div class="panel">
+                    <p>
+                        The purpose of this research is to combine the Navigation function path-planning algorithm with the minimum jerk trajectory design for a planetary exploration rover with some physical constraints associated with it. A new method to redesign the trajectory was discussed when the physical constraints suddenly change. A trajectory tracking controller was designed so as to calculate the wheel speeds. This simplified the process of merging the framework with the experimental setup by having the control law calculate the wheel speeds for tracking the trajectory of the rover.
+                    </p>
+
+                    <figure style="text-align: center; width: 100%; max-width: 800px; margin: 0 auto;">
+                        <figcaption><strong>Minimum Jerk Point to Point TrajectoryWith Constrained Acceleration</strong></figcaption>
+                        <img src="media\Research\Optimal Trajectory Design and Control of a Planetary Exploration Rover\Results_con_acc.png" style="width: 100%; height: auto;" alt="Optimal Trajectory Design and Control of a Planetary Exploration Rover">
+                    </figure>
+                </div>
             </div>
 
-            <!-- Tab: Publications -->
-            <div id="Publications" class="tabcontent">
-                <h1>Publications</h1>
-                <h2> Journal</h2>
-                <ul style="margin-top:10px; list-style-position: inside;">
-                    <li style="margin-bottom: 10px;">
-                        A. R. Godbole and K. Subbarao, "Nonlinear Control of Unmanned Aerial Vehicles with Cable Suspended Payloads," in Journal of Aerospace Science, and Technology (Elsevier), vol.93, p.105299, 2019, doi: <a href="https://doi.org/10.1016/j.ast.2019.07.032">https://doi.org/10.1016/j.ast.2019.07.032</a>.
-                    </li>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
 
-                    <li style="margin-bottom: 10px;">
-                        A. Godbole, K. Subbarao, A. Dogan, and B. Huff, "Semi-analytical range and endurance computation of battery-powered multi-copter unmanned aerial systems under steady wind conditions," in Proceedings of the Institution of Mechanical Engineers, Part G: Journal of Aerospace Engineering, April, 2019. [Online]. Available: <a href="https://doi.org/10.1177/0954410019842714">https://doi.org/10.1177/0954410019842714</a>.
-                    </li>
-                </ul>
-                <h2>Conference</h2>
-                <ul style="margin-top:10px; list-style-position: inside;">
-                    <li style="margin-bottom: 10px;">
-                        Khan H.R., Godbole A., Subbarao K., “Simulation and Control of an Extra-Vehicular Space Robot for Debris Capture and Removal in LEO”, 2023 AAS/AIAA Astrodynamics Specialist Conference, August 2023, Big Sky, MT, USA
-                    </li>
-
-                    <li style="margin-bottom: 10px;">
-                        Khan H.R., Godbole A., Subbarao K., “Extra Vehicular Operations and Payload Transportation in Microgravity with a Cooperative Free-flyer Robot”, 33rd AAS/AIAA Space Flight Mechanics Meeting, January 2023, Austin, TX, USA
-                    </li>
-
-                    <li style="margin-bottom: 10px;">
-                        A. R. Godbole, K. Subbarao, A. Dogan and B. Huff, <a href="https://ieeexplore.ieee.org/abstract/document/8453388">"Range and Endurance Characterization of a Quadcopter subject to Steady Wind"</a>, 2018 International Conference on Unmanned Aircraft Systems (ICUAS), Dallas, TX, 2018, pp. 1279-1287. doi: 10.1109/ICUAS.2018.8453388.
-                    </li>
-
-                    <li style="margin-bottom: 10px;">
-                        A. R. Godbole and K. Subbarao, <a href="https://ieeexplore.ieee.org/document/8444279">"Mathematical Modeling and Control of an Unmanned Aerial System with a Cable Suspended Payload"</a>, 2018 IEEE 14th International Conference on Control and Automation (ICCA), Anchorage, AK, 2018, pp. 570-575. doi: 10.1109/ICCA.2018.8444279.
-                    </li>
-
-                    <li style="margin-bottom: 10px;">
-                        Godbole A., Murali V.N.V., Quillen P., Subbarao K., <a href="http://www.univelt.com/book=6143">"Optimal Trajectory Design and Control of a Planetary Exploration Rover"</a>, 27th AAS/AIAA Space Flight Mechanics Meeting, February 2017, San Antonio, TX, USA.
-                    </li>
-
-                    <li>
-                        G. Atmeh, L.S. Henderson, P. Nuthi, A. Rege, P. Ru, A. Godbole, P. Quillen, K. Subbarao, <a href="http://rascal.nianet.org/wp-content/uploads/2015/07/RASC-AL-2014-UTA-TechPaper.pdf">"SMIRFF: Smart Maintenance, Inspection, and Repair Free-Flyer"</a>, NASA Revolutionary Aerospace Systems Concepts - Academic Linkage 2014. (Won <a href="http://rascal.nianet.org/rascal-archives/2014-winning-teams/">1st place in the Graduate Division</a> for Tele-Operated Flying Robot.)
-                    </li>
-                </ul>
-
-                <h2>Dissertation</h2>
-                <ul style="margin-top:10px; list-style-position: inside;">
-                    <li style="margin-bottom: 10px;">
-                        Godbole, Ameya, <a href="https://mavmatrix.uta.edu/mechaerospace_dissertations/264">"Nonlinear Control of Unmanned Aerial Vehicles with Cable Suspended Payloads"</a> (2019). Mechanical and Aerospace Engineering Dissertations. 264.
-</li>
-                </ul>
-                <h2>M.S Thesis</h2>
-                <ul style="margin-top:10px; list-style-position: inside;">
-                    <li style="margin-bottom: 10px;">
-                        Godbole, A. R. (2015). <a href="https://search.proquest.com/docview/1699700882?pq-origsite=gscholar">"Dynamics and Control of the Smart Maintenance and Inspection Robotic Free-Flyer (SMIRFF)"</a>. The University of Texas at Arlington.
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Tab: Contact Me -->
-            <div id="Contact Me" class="tabcontent">
-                <p>Email: <a href="mailto:ameyarajendragodbole@gmail.com">ameyarajendragodbole@gmail.com</a></p>
-                <p><a href="https://www.linkedin.com/in/ameya-godbole-07808558?trk=people-guest_profile-result-card_result-card_full-click">Connect with me on Linkedin</a></p>
-                <p><a href="GodboleAmeyaRajendra_Resume.pdf">My Resume</a></p>
-                <!-- <p><a href="https://www.researchgate.net/profile/Ameya_Godbole">ResearchGate Profile</a></p> -->
-            </div>
-        </div>
-        <script>
-            function openTab(evt, tabName) {
-                let i, tabcontent, tablinks;
-
-                // Hide all tab content
-                tabcontent = document.getElementsByClassName("tabcontent");
-                for (i = 0; i < tabcontent.length; i++) {
-                    tabcontent[i].style.display = "none";
-                }
-
-                // Remove the active class from all tab buttons
-                tablinks = document.getElementsByClassName("tablinks");
-                for (i = 0; i < tablinks.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-
-                // Show the selected tab content and add the active class to the clicked button
-                document.getElementById(tabName).style.display = "block";
-                evt.currentTarget.className += " active";
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
             }
-        </script>
+        });
+    }
+</script>
+            </div>
+
+<!-- Tab: Publications -->
+<div id="Publications" class="tabcontent">
+    <h1>Publications</h1>
+    <h2> Journal</h2>
+    <ul style="margin-top:10px; list-style-position: inside;">
+        <li style="margin-bottom: 10px;">
+            A. R. Godbole and K. Subbarao, "Nonlinear Control of Unmanned Aerial Vehicles with Cable Suspended Payloads," in Journal of Aerospace Science, and Technology (Elsevier), vol.93, p.105299, 2019, doi: <a href="https://doi.org/10.1016/j.ast.2019.07.032">https://doi.org/10.1016/j.ast.2019.07.032</a>.
+        </li>
+
+        <li style="margin-bottom: 10px;">
+            A. Godbole, K. Subbarao, A. Dogan, and B. Huff, "Semi-analytical range and endurance computation of battery-powered multi-copter unmanned aerial systems under steady wind conditions," in Proceedings of the Institution of Mechanical Engineers, Part G: Journal of Aerospace Engineering, April, 2019. [Online]. Available: <a href="https://doi.org/10.1177/0954410019842714">https://doi.org/10.1177/0954410019842714</a>.
+        </li>
+    </ul>
+    <h2>Conference</h2>
+    <ul style="margin-top:10px; list-style-position: inside;">
+        <li style="margin-bottom: 10px;">
+            Khan H.R., Godbole A., Subbarao K., “Simulation and Control of an Extra-Vehicular Space Robot for Debris Capture and Removal in LEO”, 2023 AAS/AIAA Astrodynamics Specialist Conference, August 2023, Big Sky, MT, USA
+        </li>
+
+        <li style="margin-bottom: 10px;">
+            Khan H.R., Godbole A., Subbarao K., “Extra Vehicular Operations and Payload Transportation in Microgravity with a Cooperative Free-flyer Robot”, 33rd AAS/AIAA Space Flight Mechanics Meeting, January 2023, Austin, TX, USA
+        </li>
+
+        <li style="margin-bottom: 10px;">
+            A. R. Godbole, K. Subbarao, A. Dogan and B. Huff, <a href="https://ieeexplore.ieee.org/abstract/document/8453388">"Range and Endurance Characterization of a Quadcopter subject to Steady Wind"</a>, 2018 International Conference on Unmanned Aircraft Systems (ICUAS), Dallas, TX, 2018, pp. 1279-1287. doi: 10.1109/ICUAS.2018.8453388.
+        </li>
+
+        <li style="margin-bottom: 10px;">
+            A. R. Godbole and K. Subbarao, <a href="https://ieeexplore.ieee.org/document/8444279">"Mathematical Modeling and Control of an Unmanned Aerial System with a Cable Suspended Payload"</a>, 2018 IEEE 14th International Conference on Control and Automation (ICCA), Anchorage, AK, 2018, pp. 570-575. doi: 10.1109/ICCA.2018.8444279.
+        </li>
+
+        <li style="margin-bottom: 10px;">
+            Godbole A., Murali V.N.V., Quillen P., Subbarao K., <a href="http://www.univelt.com/book=6143">"Optimal Trajectory Design and Control of a Planetary Exploration Rover"</a>, 27th AAS/AIAA Space Flight Mechanics Meeting, February 2017, San Antonio, TX, USA.
+        </li>
+
+        <li>
+            G. Atmeh, L.S. Henderson, P. Nuthi, A. Rege, P. Ru, A. Godbole, P. Quillen, K. Subbarao, <a href="http://rascal.nianet.org/wp-content/uploads/2015/07/RASC-AL-2014-UTA-TechPaper.pdf">"SMIRFF: Smart Maintenance, Inspection, and Repair Free-Flyer"</a>, NASA Revolutionary Aerospace Systems Concepts - Academic Linkage 2014. (Won <a href="http://rascal.nianet.org/rascal-archives/2014-winning-teams/">1st place in the Graduate Division</a> for Tele-Operated Flying Robot.)
+        </li>
+    </ul>
+
+    <h2>Dissertation</h2>
+    <ul style="margin-top:10px; list-style-position: inside;">
+        <li style="margin-bottom: 10px;">
+            Godbole, Ameya, <a href="https://mavmatrix.uta.edu/mechaerospace_dissertations/264">"Nonlinear Control of Unmanned Aerial Vehicles with Cable Suspended Payloads"</a> (2019). Mechanical and Aerospace Engineering Dissertations. 264.
+        </li>
+    </ul>
+    <h2>M.S Thesis</h2>
+    <ul style="margin-top:10px; list-style-position: inside;">
+        <li style="margin-bottom: 10px;">
+            Godbole, A. R. (2015). <a href="https://search.proquest.com/docview/1699700882?pq-origsite=gscholar">"Dynamics and Control of the Smart Maintenance and Inspection Robotic Free-Flyer (SMIRFF)"</a>. The University of Texas at Arlington.
+        </li>
+    </ul>
+</div>
+
+<!-- Tab: Contact Me -->
+<div id="Contact Me" class="tabcontent">
+    <p>Email: <a href="mailto:ameyarajendragodbole@gmail.com">ameyarajendragodbole@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com/in/ameya-godbole-07808558?trk=people-guest_profile-result-card_result-card_full-click">Connect with me on Linkedin</a></p>
+    <p><a href="GodboleAmeyaRajendra_Resume.pdf">My Resume</a></p>
+    <!-- <p><a href="https://www.researchgate.net/profile/Ameya_Godbole">ResearchGate Profile</a></p> -->
+</div>
+        </div>
+<script>
+    function openTab(evt, tabName) {
+        let i, tabcontent, tablinks;
+
+        // Hide all tab content
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Remove the active class from all tab buttons
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the selected tab content and add the active class to the clicked button
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
     </body>
 
-    </html>
+</html>
